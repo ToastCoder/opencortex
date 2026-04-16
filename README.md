@@ -1,1 +1,1 @@
-# opencortex
+# OpenCortex

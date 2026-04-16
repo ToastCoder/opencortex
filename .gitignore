@@ -208,4 +208,5 @@ __marimo__/
 
 
 # Custom 
-local_run.sh
+opencortex_db/
+src/__pycache__/

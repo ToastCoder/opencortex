@@ -32,7 +32,7 @@ OpenCortex is entirely modular. By editing the JSON files in the `/config` folde
 
 ## Quick Start (The "One-Click" Setup)
 
-`setup.sh` script handles everything from installing necesary softwares to managing the environment. Enter the following in terminal.
+`run.sh` script handles everything from installing necesary softwares to managing the environment. Enter the following in terminal.
 
 ```bash
 chmod +x run.sh

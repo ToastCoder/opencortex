@@ -22,7 +22,27 @@ OpenCortex is entirely modular. By editing the JSON files in the `/config` folde
 ### `prompts.json` (LLM System Prompts and Template)
 * **System Persona**: Define how the AI should act (e.g., "You are a professional SAP developer" or "You are a helpful study assistant").
 * **RAG Template**: Change how the AI formats the retrieved context, allowing you to prioritize either strict citations or conversational flow.
-* 
+
+## Code structure
+
+```
+OpenCortex/
+├── 📂 config/               Logic & Persona settings
+│   ├── 📄 parameters.json   Model toggles, chunk sizes, VRAM management
+│   └── 📄 prompts.json      System instructions & RAG templates
+├── 📂 opencortex_db/        Persistent ChromaDB vector storage
+├── 📂 src/                  Core functions
+│   ├── 📄 core.py           Dual-Pass Vision Engine & RAG pipeline
+│   └── 📄 database.py       MongoDB connection management
+├── 📂 utils/                Helper functions
+│   └── 📄 logger.py         Standardized system logging
+├── 📄 app.py                Streamlit UI & frontend code
+├── 📄 Dockerfile            Container build instructions (Tesseract/Python)
+├── 📄 docker-compose.yml    Service orchestration (Web/MongoDB)
+├── 📄 requirements.txt      Python dependencies
+└── 📄 run.sh                Diagnostic & Deployment script
+```
+
 ## Requirements
 - **Docker & Docker Compose**
 - **Ollama** (Running natively on the host machine)
